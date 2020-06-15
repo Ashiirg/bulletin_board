@@ -1,0 +1,67 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-wrap {
+  h4 {
+    text-align: center;
+  }
+}
+
+.post__item {
+  border-bottom: 1px solid #d5d5d5;
+  padding: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  .post__item-title {
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .post__item-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  .post__item-info {
+    display: flex;
+    justify-content: space-between;
+    .post__item-author {
+      font-size: 13px;
+    }
+    .post__item-date {
+      font-size: 13px;
+    }
+  }
+  .post__item-text {
+    margin-top: 15px;
+    text-align: justify;
+  }
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.nav-item .active {
+  pointer-events: none;
+  cursor: default;
+}
